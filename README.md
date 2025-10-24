@@ -1,5 +1,5 @@
 
-````markdown
+
 # RFP-Extractor
 
 Automated information extraction system for procurement/bid documents (RFPs).  
@@ -30,7 +30,7 @@ Parses PDF and HTML bid documents, uses OpenAI embeddings + GPT-5 Nano to extrac
    ```bash
    git clone https://github.com/adiavolo/RFP-Extractor.git
    cd RFP-Extractor
-````
+
 
 2. Create and activate a virtual environment
 

@@ -2,7 +2,9 @@
 # -----------------------------
 openai>=1.40.0
 pymupdf>=1.24.2
-beautifulsoup4>=4.12.3
 numpy>=1.26.0
-pydantic>=2.6.4
+beautifulsoup4>=4.12.3
 python-dotenv>=1.0.1
+pydantic>=2.6.4
+rich>=13.7.0
+
