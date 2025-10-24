@@ -1,0 +1,8 @@
+# requirements.txt
+# -----------------------------
+openai>=1.40.0
+pymupdf>=1.24.2
+beautifulsoup4>=4.12.3
+numpy>=1.26.0
+pydantic>=2.6.4
+python-dotenv>=1.0.1
