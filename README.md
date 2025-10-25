@@ -48,7 +48,7 @@ rfp-extractor/
 
 1. **Clone the repository**
 ```bash
-git clone <[repository-url](https://github.com/adiavolo/RFP-Extractor)>
+git clone https://github.com/adiavolo/RFP-Extractor.git
 cd rfp-extractor
 ```
 
