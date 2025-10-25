@@ -138,12 +138,24 @@ FIELD_QUERIES: Dict[str, List[str]] = {
 
     # Domain-aware but generic patterns
     "Contract or Cooperative to use": [
+        # General contract terms
         "master contract", "cooperative", "cooperative contract",
         "state contract", "existing contract", "contract number",
         "under contract", "pursuant to", "piggyback",
-        "hardware", "equipment contract", "IT contract",
-        "desktop", "laptop", "tablet", "computer contract",
-        "purchasing agreement", "special instructions",
+        # Section indicators (where contract info often appears)
+        "special instructions", "special instruction", "instructions to bidders",
+        "reference number", "solicitation under", "procurement under",
+        # IT equipment contract patterns
+        "hardware contract", "equipment contract", "IT contract",
+        "desktop laptop tablet", "computer equipment", "technology contract",
+        # Number patterns (contracts often have 8-10 digit numbers)
+        "060B", "contract 060", "master 060",
+        # Maryland-specific (adapt for other states)
+        "maryland contract", "state of maryland contract", "md contract",
+        # Date patterns (contracts often mention years)
+        "2015 contract", "2015 master", "contract 2015",
+        # Purchase agreement variants
+        "purchasing agreement", "purchase contract", "procurement agreement",
     ],
 
     "Model_no": [
@@ -151,7 +163,21 @@ FIELD_QUERIES: Dict[str, List[str]] = {
     ],
 
     "Part_no": [
-        "part number", "SKU", "catalog number", "item number", "part",
+        # Direct part number terms
+        "part number", "part #", "part no", "part num",
+        "SKU", "catalog number", "item number", "part",
+        # Table/list context
+        "component", "components list", "bill of materials",
+        "configuration", "line item", "item description",
+        # Common patterns in part numbers
+        "210-", "379-", "619-", "658-",  # Dell format patterns
+        "338-", "321-", "409-", "631-",
+        "370-", "400-", "391-", "583-",
+        # Format indicators
+        "hyphen", "dashed", "XXX-XXXX", "alphanumeric",
+        # Section headers
+        "detailed specifications", "technical specs",
+        "product breakdown", "component listing",
     ],
 
     "Product": [
@@ -266,7 +292,16 @@ def build_single_pass_prompt(snippets: Dict[str, List[Dict[str, Any]]]) -> str:
         "- Look for: Agency name, Department, State office",
         "- Do NOT use manufacturer or brand names",
         "",
-        "### Rule 7: Documentation Requirements",
+        "### Rule 7: Contract and Part Numbers (CRITICAL)",
+        "- Contract or Cooperative: Check 'Special Instructions' section carefully",
+        "- Look for: Master Contract numbers (often 8-10 digits like 060B5400007)",
+        "- Pattern: 'Desktop, Laptop and Tablet YYYY Master Contract, XXXXXXXXX'",
+        "- Part Numbers: Extract ALL part/SKU numbers from tables and specifications",
+        "- Format: Usually XXX-XXXX (e.g., 210-BLYZ, 379-BFNZ)",
+        "- Source: Often in detailed specs, configuration tables, or component lists",
+        "- Extract EVERY part number found, even if many (20-30+)",
+        "",
+        "### Rule 8: Documentation Requirements",
         "- Extract ALL required documents from ALL sections",
         "- Include requirements from different document sections",
         "- Common items: Affidavits, certificates, proof of delivery, etc.",
@@ -356,9 +391,11 @@ def build_single_pass_prompt(snippets: Dict[str, List[Dict[str, Any]]]) -> str:
         "5. Bid Submission Type = HOW to submit (NOT pricing type)",
         "6. Delivery Date = When delivered (NOT the due date for proposals)",
         "7. Bid Summary = PURPOSE/need (NOT evaluation criteria)",
-        "8. Include ALL documentation requirements from all sections",
-        "9. Only use null for truly optional/absent fields",
-        "10. Dates: YYYY-MM-DD format, no time unless explicitly stated with date",
+        "8. **CONTRACT: Check Special Instructions section for Master Contract numbers**",
+        "9. **PART NUMBERS: Extract ALL part numbers from specs/tables (may be 20-30+)**",
+        "10. Include ALL documentation requirements from all sections",
+        "11. Only use null for truly optional/absent fields",
+        "12. Dates: YYYY-MM-DD format, no time unless explicitly stated with date",
         "",
         "Extract the data now:",
     ])

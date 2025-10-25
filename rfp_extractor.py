@@ -268,8 +268,10 @@ def cosine_similarity(a: np.ndarray, b: np.ndarray) -> np.ndarray:
 
 def classify_field_complexity(field_name: str) -> str:
     """Classify field complexity for K value selection"""
-    if field_name in {"Product Specification", "Any Additional Documentation Required"}:
+    # High complexity - needs many chunks
+    if field_name in {"Product Specification", "Any Additional Documentation Required", "Part_no"}:
         return "complex"
+    # Medium-high complexity - Contract often in special sections
     elif field_name in {"Bid Summary", "Payment Terms", "Contract or Cooperative to use"}:
         return "medium"
     else:
