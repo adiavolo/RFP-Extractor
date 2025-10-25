@@ -1,25 +1,161 @@
-# 📚 **RFP Data Extraction System - README.md**
+No, the hyperlinks in the README are **internal navigation links** (not external URLs). They work in Markdown viewers and on GitHub to jump to different sections of the document.
+
+Let me reorder the README with installation and project structure at the beginning:
 
 ---
 
-## 🎯 **Project Overview**
+# 📚 **RFP Data Extraction System**
 
-This project implements an advanced **Retrieval-Augmented Generation (RAG)** system for automated extraction of structured data from Request for Proposal (RFP) documents. The system processes multi-format procurement documents (PDFs, HTML) and extracts critical bidding information with high accuracy, comprehensive provenance tracking, and full transparency.
-
-**Core Achievement**: Highly accurate field extraction with complete source verification and transparent data lineage.
+An advanced **Retrieval-Augmented Generation (RAG)** system for automated extraction of structured data from Request for Proposal (RFP) documents. The system processes multi-format procurement documents (PDFs, HTML) and extracts critical bidding information with high accuracy, comprehensive provenance tracking, and full transparency.
 
 ---
 
 ## 📋 **Table of Contents**
 
-1. [System Architecture](#system-architecture)
-2. [Core Features](#core-features)
-3. [Provenance & Transparency](#provenance--transparency)
-4. [Technical Implementation](#technical-implementation)
-5. [Installation & Usage](#installation--usage)
-6. [Design Decisions](#design-decisions)
-7. [Known Limitations](#known-limitations)
-8. [Future Enhancements](#future-enhancements)
+- [Project Structure](#project-structure)
+- [Installation & Usage](#installation--usage)
+- [System Architecture](#system-architecture)
+- [Core Features](#core-features)
+- [Provenance & Transparency](#provenance--transparency)
+- [Technical Implementation](#technical-implementation)
+- [Design Decisions](#design-decisions)
+- [Known Limitations](#known-limitations)
+- [Future Enhancements](#future-enhancements)
+
+---
+
+## 📁 **Project Structure**
+
+```
+rfp-extractor/
+├── rfp_extractor.py              # Main extraction pipeline
+├── schema_and_prompts.py         # Schema definitions & prompt templates
+├── .env                          # Environment configuration (not in repo)
+├── requirements.txt              # Python dependencies
+├── README.md                     # This file
+├── logs/
+│   └── rfp_extractor.log         # Execution logs
+└── outputs/
+    ├── {bid_id}.json             # Structured extraction
+    ├── {bid_id}_provenance.json  # Complete source tracking
+    └── {bid_id}_debug_prompt.txt # Debug output (optional)
+```
+
+---
+
+## 🚀 **Installation & Usage**
+
+### **Prerequisites**
+
+- Python 3.9 or higher
+- OpenAI API key
+
+### **Installation**
+
+1. **Clone the repository**
+```bash
+git clone <repository-url>
+cd rfp-extractor
+```
+
+2. **Install dependencies**
+```bash
+pip install -r requirements.txt
+```
+
+Or install individually:
+```bash
+pip install openai>=1.0.0 PyMuPDF>=1.23.0 beautifulsoup4>=4.12.0 \
+            numpy>=1.24.0 python-dotenv>=1.0.0 pydantic>=2.0.0
+```
+
+3. **Configure environment**
+
+Create a `.env` file in the project root:
+```bash
+OPENAI_API_KEY=sk-your-api-key-here
+EMBED_MODEL=text-embedding-3-small
+LLM_MODEL=gpt-4o-mini
+LOG_LEVEL=INFO
+```
+
+### **Basic Usage**
+
+Extract data from RFP documents:
+```bash
+python rfp_extractor.py \
+  --inputs document1.pdf document2.pdf document3.html \
+  --out outputs \
+  --bid_id E20P4600040 \
+  --provenance on
+```
+
+### **Command-Line Options**
+
+| Option | Description | Required |
+|--------|-------------|----------|
+| `--inputs` | Input PDF/HTML files (space-separated) | Yes |
+| `--out` | Output directory | Yes |
+| `--bid_id` | Bid identifier (used in output filenames) | Yes |
+| `--provenance` | Enable provenance tracking (`on` or `off`) | No (default: `off`) |
+| `--debug` | Save debug prompt with retrieval context | No |
+
+### **With Debug Mode** (Recommended for Verification)
+
+```bash
+python rfp_extractor.py \
+  --inputs PORFP.pdf specs.pdf affidavit.pdf listing.html \
+  --out outputs \
+  --bid_id E20P4600040 \
+  --provenance on \
+  --debug
+```
+
+### **Output Files**
+
+After execution, the following files are generated:
+
+| File | Description |
+|------|-------------|
+| `{bid_id}.json` | Structured extraction with all 20 fields |
+| `{bid_id}_provenance.json` | Complete source tracking (if enabled) |
+| `{bid_id}_debug_prompt.txt` | Full retrieval context (if `--debug` used) |
+| `logs/rfp_extractor.log` | Execution logs with warnings/errors |
+
+### **Example Output Structure**
+
+**Extraction JSON** (`E20P4600040.json`):
+```json
+{
+  "Bid Number": "E20P4600040",
+  "Title": "Dell Laptops w/Extended Warranty",
+  "Due Date": "2024-06-10",
+  "Product Specification": [
+    {
+      "name": "Dell Latitude 5550",
+      "specs": {
+        "cpu": "Intel Core Ultra 5 125U...",
+        "memory": "16 GB DDR5",
+        ...
+      }
+    }
+  ]
+}
+```
+
+**Provenance JSON** (`E20P4600040_provenance.json`):
+```json
+{
+  "Bid Number": [
+    {
+      "value": "E20P4600040",
+      "source": "PORFP_Dell_Laptop_Final.pdf",
+      "page": 1,
+      "confidence_score": 0.558
+    }
+  ]
+}
+```
 
 ---
 
@@ -282,61 +418,6 @@ Post-extraction, the system applies rigorous validation and normalization:
 
 ---
 
-## 🚀 **Installation & Usage**
-
-### **Prerequisites**
-
-```bash
-Python 3.9+
-OpenAI API key
-```
-
-### **Dependencies**
-
-```bash
-pip install openai>=1.0.0 PyMuPDF>=1.23.0 beautifulsoup4>=4.12.0 \
-            numpy>=1.24.0 python-dotenv>=1.0.0 pydantic>=2.0.0
-```
-
-### **Environment Setup**
-
-Create `.env` file:
-```bash
-OPENAI_API_KEY=sk-...
-EMBED_MODEL=text-embedding-3-small
-LLM_MODEL=gpt-4o-mini
-LOG_LEVEL=INFO
-```
-
-### **Basic Usage**
-
-```bash
-python rfp_extractor.py \
-  --inputs document1.pdf document2.pdf document3.html \
-  --out outputs \
-  --bid_id E20P4600040 \
-  --provenance on
-```
-
-### **With Debug Mode (Recommended for Verification)**
-
-```bash
-python rfp_extractor.py \
-  --inputs document1.pdf document2.pdf \
-  --out outputs \
-  --bid_id E20P4600040 \
-  --provenance on \
-  --debug
-```
-
-**Outputs**:
-- `outputs/{bid_id}.json` - Structured extraction
-- `outputs/{bid_id}_provenance.json` - Complete source tracking
-- `outputs/{bid_id}_debug_prompt.txt` - Full retrieval context (debug mode)
-- `logs/rfp_extractor.log` - Execution logs with validation warnings
-
----
-
 ## 🎓 **Design Decisions**
 
 ### **1. Single-Pass Extraction**
@@ -364,8 +445,6 @@ python rfp_extractor.py \
 - **Higher Recall**: Increased probability of finding scattered data
 - **Generalizability**: Semantic variety works across different document styles
 - **Fail-Safe**: If one query fails, others may succeed
-
-**Impact**: Contract field extraction improved significantly with multi-query approach
 
 ---
 
@@ -539,25 +618,6 @@ Currently optimized for English-language procurement documents.
 
 ---
 
-## 📝 **Project Structure**
-
-```
-rfp-extractor/
-├── rfp_extractor.py           # Main extraction pipeline
-├── schema_and_prompts.py      # Schema definitions & prompt templates
-├── .env                        # Environment configuration (not in repo)
-├── requirements.txt            # Python dependencies
-├── README.md                   # This file
-├── logs/
-│   └── rfp_extractor.log      # Execution logs
-└── outputs/
-    ├── {bid_id}.json          # Structured extraction
-    ├── {bid_id}_provenance.json  # Complete source tracking
-    └── {bid_id}_debug_prompt.txt # Debug output (optional)
-```
-
----
-
 ## 🤝 **Contributing**
 
 This project demonstrates advanced RAG techniques for procurement automation. Key areas for contribution:
@@ -584,14 +644,6 @@ This project is developed for academic and demonstration purposes. Commercial us
 - **PyMuPDF**: Robust PDF processing library
 - **Pydantic**: Schema validation framework
 - **Open Source Community**: BeautifulSoup, NumPy, and supporting libraries
-
----
-
-## 📧 **Contact**
-
-For questions, feedback, or collaboration opportunities:
-- GitHub Issues (technical questions)
-- Email (collaboration inquiries)
 
 ---
 
