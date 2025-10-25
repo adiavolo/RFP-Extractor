@@ -1,9 +1,3 @@
-No, the hyperlinks in the README are **internal navigation links** (not external URLs). They work in Markdown viewers and on GitHub to jump to different sections of the document.
-
-Let me reorder the README with installation and project structure at the beginning:
-
----
-
 # 📚 **RFP Data Extraction System**
 
 An advanced **Retrieval-Augmented Generation (RAG)** system for automated extraction of structured data from Request for Proposal (RFP) documents. The system processes multi-format procurement documents (PDFs, HTML) and extracts critical bidding information with high accuracy, comprehensive provenance tracking, and full transparency.
