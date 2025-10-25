@@ -1,0 +1,167 @@
+{
+  "Bid Number": "JA-207652",
+  "Title": "Student and Staff Computing Devices",
+  "Due Date": "2024-07-09",
+  "Bid Submission Type": "Electronic submission via BidNet Direct only (no email or fax)",
+  "Term of Bid": "Fixed Price",
+  "Pre Bid Meeting": {
+    "date": "2024-06-10",
+    "time": "14:00",
+    "method": "TEAMS video conference",
+    "link": "https://www.microsoft.com/en-us/microsoft-teams/join-a-meeting",
+    "meeting_id": "270 031 467 036",
+    "passcode": "N9ndKY"
+  },
+  "Installation": {
+    "services": [
+      "software installation",
+      "asset tagging and etching",
+      "device deployment and setup",
+      "asset control reporting"
+    ],
+    "white_glove_services": true
+  },
+  "Bid Bond Requirement": null,
+  "Delivery Date": "within 10 business days of receiving a Purchase Order",
+  "Payment Terms": "All Prime vendors must pay all submitted invoices, including retainage to subcontractors, suppliers, or entities within 10 days of receiving payment from the district.",
+  "Any Additional Documentation Required": [
+    "FORM 1295 - CERTIFICATE OF INTERESTED PARTIES",
+    "MWBE Forms",
+    "W9 Form",
+    "Subcontractor Forms"
+  ],
+  "MFG for Registration": "Manufacturer registration not required; vendor experience and references must be demonstrated.",
+  "Contract or Cooperative to use": [
+    "EPCNT"
+  ],
+  "Model_no": [
+    "Tier 1 Staff Basic Desktop",
+    "Tier 2 Staff Professional Desktop",
+    "Tier 1 Staff Laptop",
+    "Tier 2 Staff Laptop",
+    "Display Monitor - Touch",
+    "Display Monitor - Non-Touch",
+    "Student Tablet"
+  ],
+  "Part_no": [
+    "17.01",
+    "18.01",
+    "18.02",
+    "19.01",
+    "19.02",
+    "20.01",
+    "20.02"
+  ],
+  "Product": [
+    "Student Tablet",
+    "Tier 1 Staff Laptop",
+    "Tier 2 Staff Laptop",
+    "Tier 1 Staff Basic Desktop",
+    "Tier 2 Staff Professional Desktop",
+    "Display Monitor - Touch",
+    "Display Monitor - Non-Touch"
+  ],
+  "contact_info": "Dallas ISD Procurement Services, procurement@dallasisd.org, 972-925-3700, 9400 N. Central Expressway, Ste 1510, Dallas, TX 75231",
+  "company_name": "Dallas ISD",
+  "Bid Summary": "This Request for Proposal (RFP) will be for student and staff computing devices, including laptops, desktops, tablet devices, and display monitors.",
+  "Product Specification": [
+    {
+      "name": "Student Tablet",
+      "model_no": "17.01",
+      "part_no": [
+        "17.01"
+      ],
+      "specs": {
+        "certification": "ENERGY STAR certified",
+        "condition": "new",
+        "requirement": "none"
+      },
+      "quantity": null,
+      "warranty": "3 years"
+    },
+    {
+      "name": "Tier 1 Staff Laptop",
+      "model_no": "18.01",
+      "part_no": [
+        "18.01"
+      ],
+      "specs": {
+        "certification": "ENERGY STAR certified",
+        "condition": "new",
+        "requirement": "none"
+      },
+      "quantity": null,
+      "warranty": "3 years"
+    },
+    {
+      "name": "Tier 2 Staff Laptop",
+      "model_no": "18.02",
+      "part_no": [
+        "18.02"
+      ],
+      "specs": {
+        "certification": "ENERGY STAR certified",
+        "condition": "new",
+        "requirement": "none"
+      },
+      "quantity": null,
+      "warranty": "3 years"
+    },
+    {
+      "name": "Tier 1 Staff Basic Desktop",
+      "model_no": "19.01",
+      "part_no": [
+        "19.01"
+      ],
+      "specs": {
+        "certification": "ENERGY STAR certified",
+        "condition": "new",
+        "requirement": "none"
+      },
+      "quantity": null,
+      "warranty": "3 years"
+    },
+    {
+      "name": "Tier 2 Staff Professional Desktop",
+      "model_no": "19.02",
+      "part_no": [
+        "19.02"
+      ],
+      "specs": {
+        "certification": "ENERGY STAR certified",
+        "condition": "new",
+        "requirement": "none"
+      },
+      "quantity": null,
+      "warranty": "3 years"
+    },
+    {
+      "name": "Display Monitor - Touch",
+      "model_no": "20.01",
+      "part_no": [
+        "20.01"
+      ],
+      "specs": {
+        "certification": "ENERGY STAR certified",
+        "condition": "new",
+        "requirement": "none"
+      },
+      "quantity": null,
+      "warranty": "3 years"
+    },
+    {
+      "name": "Display Monitor - Non-Touch",
+      "model_no": "20.02",
+      "part_no": [
+        "20.02"
+      ],
+      "specs": {
+        "certification": "ENERGY STAR certified",
+        "condition": "new",
+        "requirement": "none"
+      },
+      "quantity": null,
+      "warranty": "3 years"
+    }
+  ]
+}

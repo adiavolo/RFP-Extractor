@@ -1,0 +1,288 @@
+{
+  "Bid Number": [
+    {
+      "value": "JA-207652",
+      "source": "SOURCING.html",
+      "page": null,
+      "final": true,
+      "confidence_score": 0.94
+    }
+  ],
+  "Title": [
+    {
+      "value": "Student and Staff Computing Devices",
+      "source": "SOURCING.html",
+      "page": null,
+      "final": true,
+      "confidence_score": 0.91
+    }
+  ],
+  "Due Date": [
+    {
+      "value": "2024-07-09",
+      "source": "JA-207652_FINAL.pdf",
+      "page": 32,
+      "final": true,
+      "confidence_score": 0.88,
+      "contributing_sources": [
+        {
+          "source": "JA-207652_FINAL.pdf",
+          "page": 32,
+          "doc_type": "BASE_PDF"
+        },
+        {
+          "source": "SOURCING.html",
+          "doc_type": "HTML"
+        }
+      ]
+    }
+  ],
+  "Bid Submission Type": [
+    {
+      "value": "Electronic submission via BidNet Direct only (no email or fax)",
+      "source": "SOURCING.html",
+      "page": null,
+      "final": true,
+      "confidence_score": 0.92
+    }
+  ],
+  "Term of Bid": [
+    {
+      "value": "Fixed Price",
+      "source": "JA-207652_FINAL.pdf",
+      "page": 33,
+      "final": true,
+      "confidence_score": 0.79
+    }
+  ],
+  "Pre Bid Meeting": [
+    {
+      "value": {
+        "date": "2024-06-10",
+        "time": "14:00",
+        "method": "TEAMS video conference",
+        "link": "https://www.microsoft.com/en-us/microsoft-teams/join-a-meeting",
+        "meeting_id": "270 031 467 036",
+        "passcode": "N9ndKY"
+      },
+      "source": "JA-207652_FINAL.pdf",
+      "page": 2,
+      "final": true,
+      "confidence_score": 0.87
+    }
+  ],
+  "Installation": [
+    {
+      "value": {
+        "services": [
+          "software installation",
+          "asset tagging and etching",
+          "device deployment and setup",
+          "asset control reporting"
+        ],
+        "white_glove_services": true
+      },
+      "source": "Addendum_1.pdf",
+      "page": 4,
+      "final": true,
+      "confidence_score": 0.83
+    }
+  ],
+  "Bid Bond Requirement": [
+    {
+      "value": null,
+      "source": "JA-207652_FINAL.pdf",
+      "page": null,
+      "final": true,
+      "confidence_score": 0.5
+    }
+  ],
+  "Delivery Date": [
+    {
+      "value": "within 10 business days of receiving a Purchase Order",
+      "source": "Addendum_1.pdf",
+      "page": 4,
+      "final": true,
+      "confidence_score": 0.81,
+      "contributing_sources": [
+        {
+          "source": "JA-207652_FINAL.pdf",
+          "page": 8,
+          "doc_type": "BASE_PDF"
+        },
+        {
+          "source": "Addendum_1.pdf",
+          "page": 4,
+          "doc_type": "ADDENDUM"
+        }
+      ]
+    }
+  ],
+  "Payment Terms": [
+    {
+      "value": "All Prime vendors must pay all submitted invoices, including retainage to subcontractors, suppliers, or entities within 10 days of receiving payment from the district.",
+      "source": "Addendum_1.pdf",
+      "page": 3,
+      "final": true,
+      "confidence_score": 0.82
+    }
+  ],
+  "Any Additional Documentation Required": [
+    {
+      "value": [
+        "FORM 1295 - CERTIFICATE OF INTERESTED PARTIES",
+        "MWBE Forms",
+        "W9 Form",
+        "Subcontractor Forms"
+      ],
+      "source": "Addendum_2_RFP_JA-207652.pdf",
+      "page": 1,
+      "final": true,
+      "confidence_score": 0.86
+    }
+  ],
+  "MFG for Registration": [
+    {
+      "value": "Manufacturer registration not required; vendor experience and references must be demonstrated.",
+      "source": "JA-207652_FINAL.pdf",
+      "page": 3,
+      "final": true,
+      "confidence_score": 0.84
+    }
+  ],
+  "Contract or Cooperative to use": [
+    {
+      "value": [
+        "EPCNT"
+      ],
+      "source": "JA-207652_FINAL.pdf",
+      "page": 3,
+      "final": true,
+      "confidence_score": 0.83
+    }
+  ],
+  "Model_no": [
+    {
+      "value": [
+        "Tier 1 Staff Basic Desktop",
+        "Tier 2 Staff Professional Desktop",
+        "Tier 1 Staff Laptop",
+        "Tier 2 Staff Laptop",
+        "Display Monitor - Touch",
+        "Display Monitor - Non-Touch",
+        "Student Tablet"
+      ],
+      "source": "JA-207652_FINAL.pdf",
+      "page": 39,
+      "final": true,
+      "confidence_score": 0.82
+    }
+  ],
+  "Part_no": [
+    {
+      "value": [
+        "17.01",
+        "18.01",
+        "18.02",
+        "19.01",
+        "19.02",
+        "20.01",
+        "20.02"
+      ],
+      "source": "JA-207652_FINAL.pdf",
+      "page": 39,
+      "final": true,
+      "confidence_score": 0.85
+    }
+  ],
+  "Product": [
+    {
+      "value": [
+        "Student Tablet",
+        "Tier 1 Staff Laptop",
+        "Tier 2 Staff Laptop",
+        "Tier 1 Staff Basic Desktop",
+        "Tier 2 Staff Professional Desktop",
+        "Display Monitor - Touch",
+        "Display Monitor - Non-Touch"
+      ],
+      "source": "JA-207652_FINAL.pdf",
+      "page": 35,
+      "final": true,
+      "confidence_score": 0.83
+    }
+  ],
+  "contact_info": [
+    {
+      "value": "Dallas ISD Procurement Services, procurement@dallasisd.org, 972-925-3700, 9400 N. Central Expressway, Ste 1510, Dallas, TX 75231",
+      "source": "JA-207652_FINAL.pdf",
+      "page": 28,
+      "final": true,
+      "confidence_score": 0.89
+    }
+  ],
+  "company_name": [
+    {
+      "value": "Dallas ISD",
+      "source": "JA-207652_FINAL.pdf",
+      "page": 26,
+      "final": true,
+      "confidence_score": 0.91
+    }
+  ],
+  "Bid Summary": [
+    {
+      "value": "This Request for Proposal (RFP) will be for student and staff computing devices, including laptops, desktops, tablet devices, and display monitors.",
+      "source": "JA-207652_FINAL.pdf",
+      "page": 51,
+      "final": true,
+      "confidence_score": 0.86
+    }
+  ],
+  "Product Specification": [
+    {
+      "value": [
+        {
+          "name": "Student Tablet",
+          "model_no": "17.01",
+          "part_no": ["17.01"],
+          "specs": {
+            "certification": "ENERGY STAR certified",
+            "condition": "new",
+            "requirement": "none"
+          },
+          "quantity": null,
+          "warranty": "3 years"
+        },
+        {
+          "name": "Tier 1 Staff Laptop",
+          "model_no": "18.01",
+          "part_no": ["18.01"],
+          "specs": {
+            "certification": "ENERGY STAR certified",
+            "condition": "new",
+            "requirement": "none"
+          },
+          "quantity": null,
+          "warranty": "3 years"
+        }
+      ],
+      "source": "Addendum_1.pdf",
+      "page": 1,
+      "final": true,
+      "confidence_score": 0.79,
+      "contributing_sources": [
+        {
+          "source": "JA-207652_FINAL.pdf",
+          "page": 8,
+          "doc_type": "BASE_PDF"
+        },
+        {
+          "source": "Addendum_1.pdf",
+          "page": 1,
+          "doc_type": "ADDENDUM"
+        }
+      ]
+    }
+  ]
+}

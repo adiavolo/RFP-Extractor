@@ -1,0 +1,97 @@
+{
+  "Bid Number": "E20P4600040",
+  "Title": "Dell Laptops w/Extended Warranty",
+  "Due Date": "2024-06-10",
+  "Bid Submission Type": "eMMA",
+  "Term of Bid": "Valid for at least 90 days after the due date",
+  "Pre Bid Meeting": null,
+  "Installation": null,
+  "Bid Bond Requirement": null,
+  "Delivery Date": "Delivery within 45 days of Award",
+  "Payment Terms": "Invoice(s) shall be submitted within 10 days of delivering the equipment.",
+  "Any Additional Documentation Required": [
+    "Letter of good standing",
+    "Proof of delivery including packing slip or delivery confirmation",
+    "Warranty certificate or Affidavit to be presented upon award",
+    "Mercury Affidavit"
+  ],
+  "MFG for Registration": "Dell",
+  "Contract or Cooperative to use": [
+    "Desktop, Laptop and Tablet 2015 Master Contract, 060B5400007"
+  ],
+  "Model_no": [
+    "CC7802",
+    "WD22TB4"
+  ],
+  "Part_no": [
+    "210-BLYZ",
+    "379-BFNZ",
+    "619-ARSB",
+    "658-BCSB",
+    "338-CNRG",
+    "338-CNRK",
+    "321-BKTQ",
+    "409-BCXY",
+    "631-BBSQ",
+    "370-BBTL",
+    "400-BRFT",
+    "391-BJHB",
+    "583-BLNH",
+    "555-BKQC",
+    "555-BKLQ",
+    "451-BDGX",
+    "492-BDMN",
+    "346-BKLV",
+    "537-BBDO",
+    "340-DMNY",
+    "340-AGIK",
+    "387-BBPC",
+    "817-BBBB",
+    "658-BFQB",
+    "340-DMMK",
+    "389-FGSN",
+    "319-BBKK",
+    "634-BRWG",
+    "379-BDZB"
+  ],
+  "Product": [
+    "Dell Latitude 5550",
+    "Dell Thunderbolt 4 Dock"
+  ],
+  "contact_info": "Tamaira Hawkins, thawkins@treasurer.state.md.us, 410-260-7533, MD State Treasurer's Office, 80 Calvert Street, Room 109, Annapolis, MD 21401",
+  "company_name": "State Treasurer's Office",
+  "Bid Summary": "Office is in need of a refresh of laptops and must acquire enough laptops to accommodate MD529 employees who have been included in our staff as of June 1, 2023.",
+  "Product Specification": [
+    {
+      "name": "Dell Latitude 5550",
+      "model_no": "CC7802",
+      "part_no": [
+        "210-BLYZ"
+      ],
+      "specs": {
+        "cpu": "Intel Core Ultra 5 125U processor (12 MB cache, 12 cores, 14 threads, up to 4.3 GHz Turbo)",
+        "memory": "16 GB: 2 x 8 GB, DDR5, 5600 MT/s",
+        "storage": "256 GB, M.2 2230, TLC, Gen 4 PCIe NVMe, SSD",
+        "display": "15.6\", FHD 1920x1080, 60Hz, IPS, Non-Touch, AG, 250 nit, 45% NTSC",
+        "certification": "ENERGY STAR certified",
+        "condition": "new and unused",
+        "requirement": "Laptops must be Microsoft Copilot ready"
+      },
+      "quantity": 30,
+      "warranty": "3 years following the date of delivery"
+    },
+    {
+      "name": "Dell Thunderbolt 4 Dock",
+      "model_no": "WD22TB4",
+      "part_no": [
+        "379-BFNZ"
+      ],
+      "specs": {
+        "certification": "ENERGY STAR certified",
+        "condition": "new and unused"
+      },
+      "quantity": 30,
+      "warranty": "3 years following the date of delivery"
+    }
+  ]
+}

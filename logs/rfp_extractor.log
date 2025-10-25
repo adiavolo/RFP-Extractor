@@ -1,0 +1,84 @@
+2025-10-25 14:31:07,297 [INFO] Starting extraction for Bid ID: E20P4600040
+2025-10-25 14:31:07,297 [INFO] Input files: ['C:\\Y_2025\\fps_rfp\\RFP-Extractor\\Uploads\\Bid2\\PORFP_Dell_Laptop_Final.pdf', 'C:\\Y_2025\\fps_rfp\\RFP-Extractor\\Uploads\\Bid2\\Dell Laptops_w_Extended Warranty.html', 'C:\\Y_2025\\fps_rfp\\RFP-Extractor\\Uploads\\Bid2\\Contract_Affidavit.pdf', 'C:\\Y_2025\\fps_rfp\\RFP-Extractor\\Uploads\\Bid2\\Dell_Laptop_Specs.pdf']
+2025-10-25 14:31:07,298 [INFO] Classified 'PORFP_Dell_Laptop_Final.pdf' as BASE_PDF
+2025-10-25 14:31:07,312 [INFO] Parsed PORFP_Dell_Laptop_Final.pdf: 14 chunks from 4 pages
+2025-10-25 14:31:07,330 [INFO] Parsed Dell Laptops_w_Extended Warranty.html: 5 chunks
+2025-10-25 14:31:07,330 [INFO] Classified 'Contract_Affidavit.pdf' as BASE_PDF
+2025-10-25 14:31:07,337 [INFO] Parsed Contract_Affidavit.pdf: 19 chunks from 3 pages
+2025-10-25 14:31:07,338 [INFO] Classified 'Dell_Laptop_Specs.pdf' as BASE_PDF
+2025-10-25 14:31:07,345 [INFO] Parsed Dell_Laptop_Specs.pdf: 17 chunks from 3 pages
+2025-10-25 14:31:07,346 [INFO] Total chunks: 55
+2025-10-25 14:31:07,346 [INFO] Generating embeddings...
+2025-10-25 14:31:08,637 [INFO] Embeddings complete
+2025-10-25 14:31:08,638 [INFO] Retrieving relevant snippets for each field...
+2025-10-25 14:31:21,724 [INFO] Calling LLM for extraction...
+2025-10-25 14:32:32,627 [INFO] Normalizing output...
+2025-10-25 14:32:32,629 [INFO] Output written to outputs\E20P4600040.json
+2025-10-25 14:32:32,630 [INFO] Provenance written to outputs\E20P4600040_provenance.json
+2025-10-25 14:32:32,630 [INFO] Extraction complete!
+2025-10-25 14:53:41,152 [INFO] Starting extraction for Bid ID: E20P4600040
+2025-10-25 14:53:41,153 [INFO] Input files: ['C:\\Y_2025\\fps_rfp\\RFP-Extractor\\Uploads\\Bid2\\PORFP_Dell_Laptop_Final.pdf', 'C:\\Y_2025\\fps_rfp\\RFP-Extractor\\Uploads\\Bid2\\Dell Laptops_w_Extended Warranty.html', 'C:\\Y_2025\\fps_rfp\\RFP-Extractor\\Uploads\\Bid2\\Contract_Affidavit.pdf', 'C:\\Y_2025\\fps_rfp\\RFP-Extractor\\Uploads\\Bid2\\Dell_Laptop_Specs.pdf']
+2025-10-25 14:53:41,153 [INFO] Classified 'PORFP_Dell_Laptop_Final.pdf' as BASE_PDF
+2025-10-25 14:53:41,174 [INFO] Parsed PORFP_Dell_Laptop_Final.pdf: 14 chunks from 4 pages
+2025-10-25 14:53:41,245 [INFO] Parsed Dell Laptops_w_Extended Warranty.html: 5 chunks
+2025-10-25 14:53:41,246 [INFO] Classified 'Contract_Affidavit.pdf' as BASE_PDF
+2025-10-25 14:53:41,285 [INFO] Parsed Contract_Affidavit.pdf: 19 chunks from 3 pages
+2025-10-25 14:53:41,288 [INFO] Classified 'Dell_Laptop_Specs.pdf' as BASE_PDF
+2025-10-25 14:53:41,346 [INFO] Parsed Dell_Laptop_Specs.pdf: 17 chunks from 3 pages
+2025-10-25 14:53:41,350 [INFO] Total chunks: 55
+2025-10-25 14:53:41,351 [INFO] Generating embeddings...
+2025-10-25 14:53:43,776 [INFO] Embeddings complete
+2025-10-25 14:53:43,777 [INFO] Retrieving relevant snippets for each field...
+2025-10-25 14:53:58,524 [INFO] Calling LLM for extraction...
+2025-10-25 14:54:15,681 [INFO] Normalizing output...
+2025-10-25 14:54:15,683 [WARNING] Validation warning: High null count: 5 fields. Expected nulls: Pre Bid Meeting, Installation, Bid Bond Requirement, possibly Contract/Bid Summary.
+2025-10-25 14:54:15,684 [INFO] Output written to outputs\E20P4600040.json
+2025-10-25 14:54:15,684 [INFO] Provenance written to outputs\E20P4600040_provenance.json
+2025-10-25 14:54:15,685 [INFO] Extraction complete!
+2025-10-25 15:12:20,830 [INFO] Starting extraction for Bid ID: E20P4600040
+2025-10-25 15:12:20,834 [INFO] Input files: ['C:\\Y_2025\\fps_rfp\\RFP-Extractor\\Uploads\\Bid2\\PORFP_Dell_Laptop_Final.pdf', 'C:\\Y_2025\\fps_rfp\\RFP-Extractor\\Uploads\\Bid2\\Dell Laptops_w_Extended Warranty.html', 'C:\\Y_2025\\fps_rfp\\RFP-Extractor\\Uploads\\Bid2\\Contract_Affidavit.pdf', 'C:\\Y_2025\\fps_rfp\\RFP-Extractor\\Uploads\\Bid2\\Dell_Laptop_Specs.pdf']
+2025-10-25 15:12:20,837 [INFO] Classified 'PORFP_Dell_Laptop_Final.pdf' as BASE_PDF
+2025-10-25 15:12:20,883 [INFO] Parsed PORFP_Dell_Laptop_Final.pdf: 14 chunks from 4 pages
+2025-10-25 15:12:21,121 [INFO] Parsed Dell Laptops_w_Extended Warranty.html: 5 chunks
+2025-10-25 15:12:21,125 [INFO] Classified 'Contract_Affidavit.pdf' as BASE_PDF
+2025-10-25 15:12:21,215 [INFO] Parsed Contract_Affidavit.pdf: 19 chunks from 3 pages
+2025-10-25 15:12:21,219 [INFO] Classified 'Dell_Laptop_Specs.pdf' as BASE_PDF
+2025-10-25 15:12:21,321 [INFO] Parsed Dell_Laptop_Specs.pdf: 17 chunks from 3 pages
+2025-10-25 15:12:21,325 [INFO] Total chunks: 55
+2025-10-25 15:12:21,327 [INFO] Generating embeddings...
+2025-10-25 15:12:24,166 [INFO] Embeddings complete
+2025-10-25 15:12:24,166 [INFO] Retrieving relevant snippets for each field...
+2025-10-25 15:12:36,454 [INFO] Calling LLM for extraction...
+2025-10-25 15:13:09,104 [INFO] Normalizing output...
+2025-10-25 15:13:09,106 [INFO] Output written to outputs\E20P4600040.json
+2025-10-25 15:13:09,107 [INFO] Provenance written to outputs\E20P4600040_provenance.json
+2025-10-25 15:13:09,108 [INFO] Extraction complete!
+2025-10-25 16:01:22,746 [INFO] Starting extraction for Bid ID: 168884
+2025-10-25 16:01:22,746 [INFO] Input files: ['C:\\Y_2025\\fps_rfp\\RFP-Extractor\\Uploads\\Bid1\\JA-207652_FINAL.pdf', 'C:\\Y_2025\\fps_rfp\\RFP-Extractor\\Uploads\\Bid1\\SOURCING.html', 'C:\\Y_2025\\fps_rfp\\RFP-Extractor\\Uploads\\Bid1\\Addendum_1.pdf', 'C:\\Y_2025\\fps_rfp\\RFP-Extractor\\Uploads\\Bid1\\Addendum_2_RFP_JA-207652.pdf']
+2025-10-25 16:01:22,746 [INFO] Classified 'JA-207652_FINAL.pdf' as BASE_PDF
+2025-10-25 16:01:23,110 [INFO] Parsed JA-207652_FINAL.pdf: 341 chunks from 62 pages
+2025-10-25 16:01:23,426 [INFO] Parsed SOURCING.html: 8 chunks
+2025-10-25 16:01:23,426 [INFO] Classified 'Addendum_1.pdf' as ADDENDUM
+2025-10-25 16:01:23,448 [INFO] Parsed Addendum_1.pdf: 28 chunks from 5 pages
+2025-10-25 16:01:23,448 [INFO] Classified 'Addendum_2_RFP_JA-207652.pdf' as ADDENDUM
+2025-10-25 16:01:23,462 [INFO] Parsed Addendum_2_RFP_JA-207652.pdf: 2 chunks from 1 pages
+2025-10-25 16:01:23,462 [INFO] Total chunks: 379
+2025-10-25 16:01:23,462 [INFO] Generating embeddings...
+2025-10-25 16:01:29,709 [INFO] Embeddings complete
+2025-10-25 16:01:29,710 [INFO] Retrieving relevant snippets for each field...
+2025-10-25 16:01:45,079 [INFO] Calling LLM for extraction...
+2025-10-25 16:02:09,337 [INFO] Normalizing output...
+2025-10-25 16:02:09,341 [WARNING] Pydantic validation errors: 2 validation errors for AssignmentSchema
+Pre Bid Meeting
+  Input should be a valid string [type=string_type, input_value={'date': '2024-06-10', 't...', 'passcode': 'N9ndKY'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+Installation
+  Input should be a valid string [type=string_type, input_value={'services': ['software i...e_glove_services': True}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+2025-10-25 16:02:09,341 [WARNING] Validation warning: Tier 1 Staff Laptop: Missing technical specs: cpu, memory, storage, display
+2025-10-25 16:02:09,341 [WARNING] Validation warning: Tier 2 Staff Laptop: Missing technical specs: cpu, memory, storage, display
+2025-10-25 16:02:09,341 [WARNING] Validation warning: Tier 1 Staff Basic Desktop: Missing technical specs: cpu, memory, storage, display
+2025-10-25 16:02:09,342 [WARNING] Validation warning: Tier 2 Staff Professional Desktop: Missing technical specs: cpu, memory, storage, display
+2025-10-25 16:02:09,343 [INFO] Output written to outputs\168884.json
+2025-10-25 16:02:09,344 [INFO] Provenance written to outputs\168884_provenance.json
+2025-10-25 16:02:09,344 [INFO] Extraction complete!

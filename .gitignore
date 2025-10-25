@@ -21,11 +21,6 @@ Thumbs.db
 # Environment and secrets
 .env
 
-# Output / logs
-outputs/
-logs/
-*.log
-
 # Temporary or debug artifacts
 *.tmp
 *.bak

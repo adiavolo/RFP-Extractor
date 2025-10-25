@@ -1,0 +1,332 @@
+{
+  "Bid Number": [
+    {
+      "value": "E20P4600040",
+      "source": "PORFP_Dell_Laptop_Final.pdf",
+      "page": 1,
+      "final": true,
+      "confidence_score": 0.558
+    }
+  ],
+  "Title": [
+    {
+      "value": "Dell Laptops w/Extended Warranty",
+      "source": "PORFP_Dell_Laptop_Final.pdf",
+      "page": 1,
+      "final": true,
+      "confidence_score": 0.479
+    }
+  ],
+  "Due Date": [
+    {
+      "value": "2024-06-10",
+      "source": "PORFP_Dell_Laptop_Final.pdf",
+      "page": 1,
+      "final": true,
+      "confidence_score": 0.466
+    }
+  ],
+  "Bid Submission Type": [
+    {
+      "value": "eMMA",
+      "source": "PORFP_Dell_Laptop_Final.pdf",
+      "page": 4,
+      "final": true,
+      "confidence_score": 0.584
+    }
+  ],
+  "Term of Bid": [
+    {
+      "value": "Valid for at least 90 days after the due date",
+      "source": "Contract_Affidavit.pdf",
+      "page": 2,
+      "final": true,
+      "confidence_score": 0.464
+    }
+  ],
+  "Delivery Date": [
+    {
+      "value": "Delivery within 45 days of Award",
+      "source": "Dell_Laptop_Specs.pdf",
+      "page": 3,
+      "final": true,
+      "confidence_score": 0.428
+    }
+  ],
+  "Payment Terms": [
+    {
+      "value": "Invoice(s) shall be submitted within 10 days of delivering the equipment.",
+      "source": "Dell_Laptop_Specs.pdf",
+      "page": 3,
+      "final": true,
+      "confidence_score": 0.527
+    }
+  ],
+  "Any Additional Documentation Required": [
+    {
+      "value": [
+        "Letter of good standing",
+        "Proof of delivery including packing slip or delivery confirmation",
+        "Warranty certificate or Affidavit to be presented upon award",
+        "Mercury Affidavit"
+      ],
+      "source": "Contract_Affidavit.pdf",
+      "page": 2,
+      "final": true,
+      "confidence_score": 0.588,
+      "contributing_sources": [
+        {
+          "source": "Contract_Affidavit.pdf",
+          "page": 2,
+          "doc_type": "BASE_PDF"
+        },
+        {
+          "source": "Contract_Affidavit.pdf",
+          "page": 3,
+          "doc_type": "BASE_PDF"
+        },
+        {
+          "source": "Contract_Affidavit.pdf",
+          "page": 1,
+          "doc_type": "BASE_PDF"
+        }
+      ]
+    }
+  ],
+  "MFG for Registration": [
+    {
+      "value": "Dell",
+      "source": "PORFP_Dell_Laptop_Final.pdf",
+      "page": 1,
+      "final": true,
+      "confidence_score": 0.432
+    }
+  ],
+  "Contract or Cooperative to use": [
+    {
+      "value": [
+        "Desktop, Laptop and Tablet 2015 Master Contract, 060B5400007"
+      ],
+      "source": "PORFP_Dell_Laptop_Final.pdf",
+      "page": 1,
+      "final": true,
+      "confidence_score": 0.648,
+      "contributing_sources": [
+        {
+          "source": "PORFP_Dell_Laptop_Final.pdf",
+          "page": 1,
+          "doc_type": "BASE_PDF"
+        },
+        {
+          "source": "PORFP_Dell_Laptop_Final.pdf",
+          "page": 2,
+          "doc_type": "BASE_PDF"
+        },
+        {
+          "source": "Contract_Affidavit.pdf",
+          "page": 1,
+          "doc_type": "BASE_PDF"
+        }
+      ]
+    }
+  ],
+  "Model_no": [
+    {
+      "value": [
+        "CC7802",
+        "WD22TB4"
+      ],
+      "source": "Dell_Laptop_Specs.pdf",
+      "page": 1,
+      "final": true,
+      "confidence_score": 0.356,
+      "contributing_sources": [
+        {
+          "source": "Dell_Laptop_Specs.pdf",
+          "page": 1,
+          "doc_type": "BASE_PDF"
+        },
+        {
+          "source": "Dell_Laptop_Specs.pdf",
+          "page": 2,
+          "doc_type": "BASE_PDF"
+        },
+        {
+          "source": "PORFP_Dell_Laptop_Final.pdf",
+          "page": 1,
+          "doc_type": "BASE_PDF"
+        }
+      ]
+    }
+  ],
+  "Part_no": [
+    {
+      "value": [
+        "210-BLYZ",
+        "379-BFNZ",
+        "619-ARSB",
+        "658-BCSB",
+        "338-CNRG",
+        "338-CNRK",
+        "321-BKTQ",
+        "409-BCXY",
+        "631-BBSQ",
+        "370-BBTL",
+        "400-BRFT",
+        "391-BJHB",
+        "583-BLNH",
+        "555-BKQC",
+        "555-BKLQ",
+        "451-BDGX",
+        "492-BDMN",
+        "346-BKLV",
+        "537-BBDO",
+        "340-DMNY",
+        "340-AGIK",
+        "387-BBPC",
+        "817-BBBB",
+        "658-BFQB",
+        "340-DMMK",
+        "389-FGSN",
+        "319-BBKK",
+        "634-BRWG",
+        "379-BDZB"
+      ],
+      "source": "Dell_Laptop_Specs.pdf",
+      "page": 2,
+      "final": true,
+      "confidence_score": 0.422,
+      "contributing_sources": [
+        {
+          "source": "Dell_Laptop_Specs.pdf",
+          "page": 2,
+          "doc_type": "BASE_PDF"
+        },
+        {
+          "source": "PORFP_Dell_Laptop_Final.pdf",
+          "page": 1,
+          "doc_type": "BASE_PDF"
+        },
+        {
+          "source": "Dell_Laptop_Specs.pdf",
+          "page": 3,
+          "doc_type": "BASE_PDF"
+        }
+      ]
+    }
+  ],
+  "Product": [
+    {
+      "value": [
+        "Dell Latitude 5550",
+        "Dell Thunderbolt 4 Dock"
+      ],
+      "source": "PORFP_Dell_Laptop_Final.pdf",
+      "page": 1,
+      "final": true,
+      "confidence_score": 0.423,
+      "contributing_sources": [
+        {
+          "source": "PORFP_Dell_Laptop_Final.pdf",
+          "page": 1,
+          "doc_type": "BASE_PDF"
+        },
+        {
+          "source": "Dell_Laptop_Specs.pdf",
+          "page": 1,
+          "doc_type": "BASE_PDF"
+        },
+        {
+          "source": "Dell_Laptop_Specs.pdf",
+          "page": 3,
+          "doc_type": "BASE_PDF"
+        }
+      ]
+    }
+  ],
+  "contact_info": [
+    {
+      "value": "Tamaira Hawkins, thawkins@treasurer.state.md.us, 410-260-7533, MD State Treasurer's Office, 80 Calvert Street, Room 109, Annapolis, MD 21401",
+      "source": "PORFP_Dell_Laptop_Final.pdf",
+      "page": 4,
+      "final": true,
+      "confidence_score": 0.506
+    }
+  ],
+  "company_name": [
+    {
+      "value": "State Treasurer's Office",
+      "source": "Contract_Affidavit.pdf",
+      "page": 2,
+      "final": true,
+      "confidence_score": 0.524
+    }
+  ],
+  "Bid Summary": [
+    {
+      "value": "Office is in need of a refresh of laptops and must acquire enough laptops to accommodate MD529 employees who have been included in our staff as of June 1, 2023.",
+      "source": "PORFP_Dell_Laptop_Final.pdf",
+      "page": 3,
+      "final": true,
+      "confidence_score": 0.478
+    }
+  ],
+  "Product Specification": [
+    {
+      "value": [
+        {
+          "name": "Dell Latitude 5550",
+          "model_no": "CC7802",
+          "part_no": [
+            "210-BLYZ"
+          ],
+          "specs": {
+            "cpu": "Intel Core Ultra 5 125U processor (12 MB cache, 12 cores, 14 threads, up to 4.3 GHz Turbo)",
+            "memory": "16 GB: 2 x 8 GB, DDR5, 5600 MT/s",
+            "storage": "256 GB, M.2 2230, TLC, Gen 4 PCIe NVMe, SSD",
+            "display": "15.6\", FHD 1920x1080, 60Hz, IPS, Non-Touch, AG, 250 nit, 45% NTSC",
+            "certification": "ENERGY STAR certified",
+            "condition": "new and unused",
+            "requirement": "Laptops must be Microsoft Copilot ready"
+          },
+          "quantity": 30,
+          "warranty": "3 years following the date of delivery"
+        },
+        {
+          "name": "Dell Thunderbolt 4 Dock",
+          "model_no": "WD22TB4",
+          "part_no": [
+            "379-BFNZ"
+          ],
+          "specs": {
+            "certification": "ENERGY STAR certified",
+            "condition": "new and unused"
+          },
+          "quantity": 30,
+          "warranty": "3 years following the date of delivery"
+        }
+      ],
+      "source": "PORFP_Dell_Laptop_Final.pdf",
+      "page": 4,
+      "final": true,
+      "confidence_score": 0.515,
+      "contributing_sources": [
+        {
+          "source": "PORFP_Dell_Laptop_Final.pdf",
+          "page": 4,
+          "doc_type": "BASE_PDF"
+        },
+        {
+          "source": "PORFP_Dell_Laptop_Final.pdf",
+          "page": 3,
+          "doc_type": "BASE_PDF"
+        },
+        {
+          "source": "Dell_Laptop_Specs.pdf",
+          "page": 1,
+          "doc_type": "BASE_PDF"
+        }
+      ]
+    }
+  ]
+}
